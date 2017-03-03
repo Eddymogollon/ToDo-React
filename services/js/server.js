@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 5000;
 var mongodb = process.env.MONGODB_URI || "mongodb://localhost/todos";
 var app = express();
 
