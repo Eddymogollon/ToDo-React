@@ -60,6 +60,10 @@ gulp.task('watch', () => {
     gulp.watch(['client/public/js/**/*.js', 'services/src/**/*.js'], ['client-browserify', 'babel-services'])
 });
 
+gulp.task("heroku:production", function(){
+    console.log('hello'); // the task does not need to do anything.
+});
+
 gulp.task('default', () => {
     gulp.start('client-browserify', 'babel-services', 'start-server' ,'watch');
 });
