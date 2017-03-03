@@ -60,14 +60,6 @@ gulp.task('watch', () => {
     gulp.watch(['client/public/js/**/*.js', 'services/src/**/*.js'], ['client-browserify', 'babel-services'])
 });
 
-gulp.task('serveprod', function() {
-  connect.server({
-    root: 'index',
-    port: process.env.PORT || 5000, // localhost:5000
-    livereload: false
-  });
-});
-
 gulp.task('default', () => {
     gulp.start('client-browserify', 'babel-services', 'start-server' ,'watch');
 });
