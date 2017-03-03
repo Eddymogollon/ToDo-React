@@ -4,8 +4,8 @@
   "description": "React-ToDo",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp",
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "gulp default"
   },
   "repository": {
   },
