@@ -9,5 +9,5 @@ Set up:
         $ cd todo-react
         $ npm install
         $ gulp
-    2. You should see: `App listening on port 3000!`
+    2. You should see: `App listening on port 5000!`
     3. Wait for the JS to compile, once it says `Finished compiling js!` the app is working!
