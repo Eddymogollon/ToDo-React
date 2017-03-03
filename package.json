@@ -4,8 +4,7 @@
   "description": "React-ToDo",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "node index.js",
-    "heroku-postbuild": "gulp"
+    "start": "node index.js"
   },
   "repository": {
   },
