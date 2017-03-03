@@ -1,9 +1,11 @@
 import express from 'express';
 import mongoose from 'mongoose';
-
+var port = process.env.PORT || 3000;
+var mongodb = process.env.MONGODB_URI || "mongodb://localhost/todos";
 var app = express();
+
 // Connect with moongose
-mongoose.connect('mongodb://localhost/todos');
+mongoose.connect(mongodb);
 
 // Create a model
 let todoModel = mongoose.model('todo', {
@@ -67,8 +69,8 @@ var server = () => {
     });
 
     // Listen to server
-    app.listen(3000, () => {
-        console.log('App listening on port 3000!');
+    app.listen(port, () => {
+        console.log(`App listening on port ${port}!`);
     });
 };
 
